@@ -78,6 +78,16 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid var(--border);
     padding: 6px 10px;
 }
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar-nav .nav-link {
+    text-decoration: none;
+    white-space: nowrap;
+}
 .navbar-toggler:focus { box-shadow: none; }
 .navbar-toggler i { color: #ffffff; }
 
