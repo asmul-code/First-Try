@@ -402,6 +402,12 @@ section { padding: 110px 0; position: relative; }
     margin: 0 auto 18px;
     transition: transform 0.3s ease;
 }
+.admin-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
 .admin-card:hover .admin-avatar { transform: scale(1.08); }
 .admin-card h5 { font-size: 1.05rem; }
 .admin-role {
