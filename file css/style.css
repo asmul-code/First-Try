@@ -69,6 +69,9 @@ h1, h2, h3, h4, h5, h6 {
     padding: 8px 16px !important;
     border-radius: 12px;
     transition: all 0.3s ease;
+    text-decoration: none !important;
+    white-space: nowrap;
+    display: block;
 }
 .nav-link:hover, .nav-link.active {
     color: #ffffff !important;
@@ -78,15 +81,17 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid var(--border);
     padding: 6px 10px;
 }
+
 .navbar-nav {
     display: flex;
     align-items: center;
     gap: 8px;
 }
-
-.navbar-nav .nav-link {
-    text-decoration: none;
-    white-space: nowrap;
+.navbar-nav .nav-item {
+    flex-shrink: 0;
+}
+#mainNav .navbar-collapse {
+    flex-grow: 1;
 }
 .navbar-toggler:focus { box-shadow: none; }
 .navbar-toggler i { color: #ffffff; }
